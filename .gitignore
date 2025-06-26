@@ -1,0 +1,15 @@
+# virtual env
+.venv/
+# secrets
+.env
+# Jupyter checkpoints
+*.ipynb_checkpoints/
+# OS cruft
+.DS_Store
+
+
+# Ignore raw weather data
+Data/raw/weather/
+Data
+Data/processed/*.csv
+*.csv
