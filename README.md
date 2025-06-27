@@ -36,6 +36,8 @@ Finally we start designing our XGBoost model and features we choose mostly weath
 We then find our RMSE and get a score of 0.6575 which seems okay, but means nothing on its owns we compare to other models. We also plot our feature importance and find HH_lag1 unsurprisngly is most important but WTI AND HDD_anom seem fairly significant. 
 Model comparison shows our model is more accurate than the others with lag-1 being closest but our model thankfully is better than that.
 
+We tested against an AR(1) model and the RMSE was 1.9733, showing our model has a 66.7% improvement upon a basic AR(1) model. 
+
 # Although on that I forgot what the measurement to find whether this is overfit or something - so I could probs check that. 
 
 After plotting permutation importance on the other hand, we find HH_lag1 is the onlt one that has highly signficant importance - so maybe WTI and HDD are less important than the feature importance suggests.
